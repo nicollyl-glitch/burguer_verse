@@ -36,3 +36,47 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
+
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+img,
+picture{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inheit;
+    /* font: inheit; --> Herda a fonte para não precisar ficar importando a fonte toda hora */
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ul, ol{
+
+    list-style: none;
+}
